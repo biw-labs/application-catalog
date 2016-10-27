@@ -1,0 +1,5 @@
+name: Metrics
+description: |
+    Monitors & Exports Host Metrics
+version: 1.0-rancher0
+category: Metrics
