@@ -1,0 +1,5 @@
+name: Logs
+description: |
+    Export Logs
+version: 1.0-rancher0
+category: Logs

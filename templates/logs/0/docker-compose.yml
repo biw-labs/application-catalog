@@ -1,0 +1,14 @@
+logspout-sumo:
+  environment:
+    DEBUG: '1'
+    LOGSPOUT: ignore
+  labels:
+    io.rancher.scheduler.global: 'true'
+    io.rancher.container.pull_image: always
+  tty: true
+  command:
+  - https://endpoint1.collection.us2.sumologic.com/?http.gzip=true&http.path=/receiver/v1/http/${env}==&http.crash=false
+  image: raychaser/logspout-http:latest
+  volumes:
+  - /var/run/docker.sock:/var/run/docker.sock
+  stdin_open: true
