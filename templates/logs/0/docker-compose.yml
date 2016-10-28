@@ -7,7 +7,7 @@ logspout-sumo:
     io.rancher.container.pull_image: always
   tty: true
   command:
-  - https://endpoint1.collection.us2.sumologic.com/?http.gzip=true&http.path=/receiver/v1/http/${env}==&http.crash=false
+  - https://endpoint1.collection.us2.sumologic.com/?http.gzip=true&http.path=/receiver/v1/http/${collector_token}==&http.crash=false
   image: raychaser/logspout-http:latest
   volumes:
   - /var/run/docker.sock:/var/run/docker.sock
