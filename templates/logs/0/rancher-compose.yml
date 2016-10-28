@@ -1,0 +1,12 @@
+.catalog:
+  name: Logs
+  version: 1.0-rancher0
+  uuid: logs-0
+  description: |
+    Export Logs
+  questions:
+    - variable: "collector_token"
+      type: "string"
+      required: true
+      label: "Collector Token"
+      description: Token from SumoLogic for the collector you're using (part of the URL)'
