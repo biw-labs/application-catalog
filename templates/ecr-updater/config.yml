@@ -1,0 +1,5 @@
+name: ECR Updater
+description: |
+    Keep Rancher ECR tokens up-to-date
+version: 1.0-rancher0
+category: Registry
