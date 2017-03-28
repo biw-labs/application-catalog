@@ -1,0 +1,5 @@
+name: Metrics Storage
+description: |
+    Stores telegraf metrics
+version: 1.0-rancher0
+category: Metrics

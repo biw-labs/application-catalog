@@ -1,0 +1,5 @@
+influxdb:
+  labels:
+    io.rancher.container.hostname_override: container_name
+    io.rancher.scheduler.affinity:container_label_ne: io.rancher.project_service.name=influxdb/influxdb
+  image: influxdb:1.0.1
