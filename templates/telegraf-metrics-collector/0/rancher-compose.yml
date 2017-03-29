@@ -1,9 +1,9 @@
 .catalog:
-  name: Metrics Collection
+  name: Telegraf Metrics Collector
   version: 1.0-rancher0
   uuid: monitoring-hosts-0
   description: |
-    Monitors & Exports Host Metrics
+    Collects Host Metrics
   questions:
     - variable: "env"
       type: "string"

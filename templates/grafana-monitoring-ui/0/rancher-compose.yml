@@ -1,5 +1,5 @@
 .catalog:
-  name: Grafana
+  name: Grafana Monitoring UI
   version: 1.0-rancher0
   uuid: grafana-0
   description: |
