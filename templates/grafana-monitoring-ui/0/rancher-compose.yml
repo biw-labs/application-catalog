@@ -1,0 +1,11 @@
+.catalog:
+  name: Grafana
+  version: 1.0-rancher0
+  uuid: grafana-0
+  description: |
+    Analytics and monitoring UI based on telegraf and influx data
+version: '2'
+services:
+  grafana:
+    scale: 1
+    start_on_create: true

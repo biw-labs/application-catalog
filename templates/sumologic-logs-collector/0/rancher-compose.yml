@@ -1,5 +1,5 @@
 .catalog:
-  name: Logs
+  name: SumoLogic Collector
   version: 1.0-rancher0
   uuid: logs-0
   description: |

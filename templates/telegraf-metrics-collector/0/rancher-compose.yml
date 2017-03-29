@@ -1,5 +1,5 @@
 .catalog:
-  name: Metrics
+  name: Metrics Collection
   version: 1.0-rancher0
   uuid: monitoring-hosts-0
   description: |

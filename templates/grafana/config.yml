@@ -1,6 +1,0 @@
-name: grafana
-description: |
-  # Analytics and Monitoring
-version: 1.0-rancher0
-category: Monitoring
-maintainer: Adam Dehnel <adam.dehnel@biworldwide.com>
