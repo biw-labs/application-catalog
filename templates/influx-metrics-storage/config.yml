@@ -1,4 +1,4 @@
-name: Metrics Storage
+name: InfluxDB Metrics Storage
 description: |
     Stores telegraf metrics
 version: 1.0-rancher0

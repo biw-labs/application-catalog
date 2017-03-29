@@ -1,5 +1,5 @@
 .catalog:
-  name: Metrics Storage
+  name: InfluxDB Metrics Storage
   version: 1.0-rancher0
   uuid: metrics-storage-0
   description: |
