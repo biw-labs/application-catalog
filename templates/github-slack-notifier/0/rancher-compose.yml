@@ -1,0 +1,8 @@
+.catalog:
+  name: GitHub Slack Notifier
+  version: 1.0-rancher0
+  uuid: github-slack-0
+  description: |
+    Transform GitHub webhooks into Slack notifications with custom channels and messaging
+ui:
+  scale: 1

@@ -1,0 +1,6 @@
+ui:
+  labels:
+    io.rancher.container.pull_image: always
+    io.rancher.container.hostname_override: container_name
+  image: 302265824077.dkr.ecr.us-west-2.amazonaws.com/github-slack-ui
+  stdin_open: true

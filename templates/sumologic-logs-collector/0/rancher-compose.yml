@@ -9,7 +9,7 @@
       type: "string"
       required: true
       label: "Collector Token"
-      description: Token from SumoLogic for the collector you're using (part of the URL)'
+      description: Token from SumoLogic for the collector you're using (part of the URL after receiver/v1/http/)'
 services:
   logspout-sumo:
     scale: 1
