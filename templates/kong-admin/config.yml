@@ -1,0 +1,5 @@
+name: Kong API Gateway Admin Interface
+description: |
+  Allow easy administration of the Kong API Gateway
+version: 1.0-rancher0
+category: Admin
