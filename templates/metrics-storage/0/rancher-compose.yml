@@ -1,3 +1,9 @@
+.catalog:
+  name: Metrics Storage
+  version: 1.0-rancher0
+  uuid: metrics-storage-0
+  description: |
+    Storage of metrics data from telegraf
 influxdb:
   scale: 1
   health_check:
