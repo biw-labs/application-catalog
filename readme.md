@@ -11,7 +11,7 @@ To try and simplify this and make it a bit more consistent across catalog items 
 ```yaml
 name: <app name>
 description: |
-  <app description in markdown>
+  <app description>
 version: <latest version code>
 category: <category>
 ```
@@ -34,9 +34,9 @@ The `.catalog` section at the top is below, everything after that is just whatev
 
 ```yaml
 .catalog:
-  name: Metrics Storage
+  name: <app name>
   version: <version code>
-  uuid: <app name>
+  uuid: <app name lowercased and hyphenated>
   description: |
     <app description in markdown>
 ...

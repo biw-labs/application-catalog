@@ -1,0 +1,6 @@
+npm-registry:
+  tty: true
+  image: verdaccio/verdaccio
+  ports:
+    - 4873:4873
+  stdin_open: true

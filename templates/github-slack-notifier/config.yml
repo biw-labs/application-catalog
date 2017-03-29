@@ -1,5 +1,5 @@
 name: GitHub Slack Notifier
 description: |
-  # Transform GitHub webhooks into Slack notifications with custom channels and messaging
+  Transform GitHub webhooks into Slack notifications with custom channels and messaging
 version: 1.0-rancher0
 category: Communications

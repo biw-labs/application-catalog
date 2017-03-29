@@ -1,0 +1,5 @@
+name: NPM Registry
+description: |
+  Simple veredaccio container that works as a mirror/proxy for NPM and allows local private repos
+version: 1.0-rancher0
+category: Development

@@ -1,0 +1,8 @@
+.catalog:
+  name: NPM Registry
+  version: 1.0-rancher0
+  uuid: npm-registry-0
+  description: |
+    Simple veredaccio container that works as a mirror/proxy for NPM and allows local private repos
+npm-registry:
+  scale: 1
