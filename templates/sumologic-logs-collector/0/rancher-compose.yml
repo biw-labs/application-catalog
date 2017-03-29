@@ -10,3 +10,8 @@
       required: true
       label: "Collector Token"
       description: Token from SumoLogic for the collector you're using (part of the URL)'
+services:
+  logspout-sumo:
+    scale: 1
+    start_on_create: true
+      
