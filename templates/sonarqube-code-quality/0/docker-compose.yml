@@ -1,0 +1,3 @@
+sonarqube:
+  image: sonarqube
+  stdin_open: true

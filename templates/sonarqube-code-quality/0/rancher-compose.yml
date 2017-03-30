@@ -1,0 +1,8 @@
+.catalog:
+  name: SonarQube Code Quality
+  version: 1.0-rancher0
+  uuid: sonarcube-code-quality-0
+  description: |
+    Platform for continuous inspection of code quality
+sonarqube:
+  scale: 1
