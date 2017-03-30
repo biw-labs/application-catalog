@@ -2,4 +2,4 @@ name: Grafana Monitoring UI
 description: |
   Analytics and monitoring UI based on telegraf and influx data
 version: 1.0-rancher0
-category: Monitoring
+category: Metrics / Monitoring

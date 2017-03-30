@@ -2,6 +2,21 @@
 
 Also refer to the [Rancher documentation](https://docs.rancher.com/rancher/v1.5/en/catalog/private-catalog/).
 
+### BIW Categories
+
+The `Category` attribute in the `config.yml` is free-form but we're trying to keep our setup to these options:
+
+- Development
+
+- Communications
+
+- CI / CD
+
+- Metrics / Monitoring
+
+- Administration
+
+
 ### Standard Setup
 
 To try and simplify this and make it a bit more consistent across catalog items the below standard setup helps identify where values should be reused across the required files.

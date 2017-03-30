@@ -2,4 +2,4 @@ name: Telegraf Metrics Collector
 description: |
     Monitors & Exports Host Metrics
 version: 1.0-rancher0
-category: Metrics
+category: Metrics / Monitoring
