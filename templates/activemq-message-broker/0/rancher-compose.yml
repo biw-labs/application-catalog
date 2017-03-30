@@ -1,0 +1,8 @@
+.catalog:
+  name: ActiveMQ
+  version: 1.0-rancher0
+  uuid: activemq-message-broker-0
+  description: |
+    Message broker and integration patterns server
+activemq:
+  scale: 1

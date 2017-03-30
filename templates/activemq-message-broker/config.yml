@@ -1,0 +1,5 @@
+name: ActiveMQ
+description: |
+  Message broker and integration patterns server
+version: 1.0-rancher0
+category: Development

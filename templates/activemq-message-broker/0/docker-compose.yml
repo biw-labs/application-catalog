@@ -1,0 +1,3 @@
+activemq:
+  image: webcenter/activemq
+  stdin_open: true
