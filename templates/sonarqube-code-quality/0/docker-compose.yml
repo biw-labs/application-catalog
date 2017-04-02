@@ -4,7 +4,7 @@ sonarqube:
     - 9000:9000 
     - 9092:9092
   environment:
-    - SONARQUBE_JDBC_USERNAME=${sonarqube_db_jdbc_username}
-    - SONARQUBE_JDBC_PASSWORD=${sonarqube_db_jdbc_password}
-    - SONARQUBE_JDBC_URL=jdbc:postgresql://${sonarqube_db_jdbc_url}
+    SONARQUBE_JDBC_USERNAME: ${sonarqube_db_jdbc_username}
+    SONARQUBE_JDBC_PASSWORD: ${sonarqube_db_jdbc_password}
+    SONARQUBE_JDBC_URL: jdbc:postgresql://${sonarqube_db_jdbc_url}
   stdin_open: true
