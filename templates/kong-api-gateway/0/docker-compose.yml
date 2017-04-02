@@ -9,4 +9,8 @@ kong:
   environment:
     - KONG_DATABASE=postgres
     - KONG_PG_HOST=${kong_pg_host}
+  logging:
+    driver: awslogs
+    options:
+      awslogs-group: ${cloudwatch_log_group}
   stdin_open: true

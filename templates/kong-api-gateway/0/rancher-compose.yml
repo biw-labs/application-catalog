@@ -9,5 +9,10 @@
       type: "string"
       required: true
       label: "Postgres Host"
+    - variable: "cloudwatch_log_group"
+      type: "string"
+      required: true
+      label: "CloudWatch Log Group Name"
 kong:
   scale: 1
+
