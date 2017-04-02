@@ -1,0 +1,13 @@
+.catalog:
+  name: Kong API Gateway
+  version: 1.0-rancher0
+  uuid: kong-0
+  description: |
+    Kong API Gateway
+  questions:
+    - variable: "kong_pg_host"
+      type: "string"
+      required: true
+      label: "Postgres Host"
+kong:
+  scale: 1
