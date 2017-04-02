@@ -4,5 +4,20 @@
   uuid: sonarcube-code-quality-0
   description: |
     Platform for continuous inspection of code quality
+  questions:
+    - variable: "sonarqube_db_jdbc_username"
+      type: "string"
+      required: true
+      label: "DB Username"
+  questions:
+    - variable: "sonarqube_db_jdbc_password"
+      type: "string"
+      required: true
+      label: "DB Password"
+  questions:
+    - variable: "sonarqube_db_jdbc_url"
+      type: "string"
+      required: true
+      label: "DB JDBC URL"
 sonarqube:
   scale: 1
