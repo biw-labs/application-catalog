@@ -1,3 +1,6 @@
 activemq:
   image: webcenter/activemq
+  ports:
+    - 8161:8161
+    - 61616:61616
   stdin_open: true
