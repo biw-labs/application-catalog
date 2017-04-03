@@ -19,5 +19,10 @@
       type: "string"
       required: true
       label: "DB JDBC URL"
+  questions:
+    - variable: "sonarqube_db_jdbc_dbname"
+      type: "string"
+      required: true
+      label: "DB Name"
 sonarqube:
   scale: 1
