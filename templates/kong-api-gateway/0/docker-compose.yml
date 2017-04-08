@@ -9,6 +9,7 @@ kong:
   environment:
     KONG_DATABASE: postgres
     KONG_PG_HOST: ${KONG_PG_HOST}
+    KONG_PG_PASSWORD: ${KONG_PG_PASSWORD}
   # logging:
   #   driver: awslogs
   #   options:
