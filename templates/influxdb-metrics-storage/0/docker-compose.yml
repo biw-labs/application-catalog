@@ -1,4 +1,7 @@
 influxdb:
+  ports:
+    - 8086:8086
+    - 8083:8083
   labels:
     io.rancher.container.hostname_override: container_name
     io.rancher.scheduler.affinity:container_label_ne: io.rancher.project_service.name=influxdb/influxdb
