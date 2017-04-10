@@ -10,7 +10,7 @@
       required: true
       label: "Environment"
       description: Environment name to tags logs with
-    - variable: "influxdb_url"
+    - variable: "INFLUXDB_URL"
       type: "string"
       required: true
       label: "URL to InfluxDB instance"
@@ -91,7 +91,7 @@ telegraf-conf:
             ### Multiple urls can be specified but it is assumed that they are part of the same
             ### cluster, this means that only ONE of the urls will be written to each interval.
             # urls = ["udp://localhost:8089"] # UDP endpoint example
-            urls = ["${influxdb_url}"] # required
+            urls = ["${INFLUXDB_URL}"] # required
             ### The target database for metrics (telegraf will create it if not exists)
             database = "aws" # required
             ### Precision of writes, valid values are n, u, ms, s, m, and h
