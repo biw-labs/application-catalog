@@ -10,6 +10,10 @@
       required: true
       label: "Environment"
       description: Environment name to tags logs with
+    - variable: "influxdb_url"
+      type: "string"
+      required: true
+      label: "URL to InfluxDB instance"
 telegraf-conf:
   metadata:
     config: &id001
