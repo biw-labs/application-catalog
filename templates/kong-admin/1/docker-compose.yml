@@ -1,0 +1,15 @@
+kong-admin:
+  image: pgbi/kong-dashboard
+  ports:
+    - 8080:8080
+  stdin_open: true
+kongadmin-api:
+  image: 302265824077.dkr.ecr.us-west-2.amazonaws.com/kongadmin-api
+  ports: 
+    - 3000:3000
+  stdin_open: true
+kongadmin-webapp:
+  image: 302265824077.dkr.ecr.us-west-2.amazonaws.com/kongadmin-webapp
+  ports:
+    - 5000:5000
+  stdin_open: true  

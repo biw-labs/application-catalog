@@ -1,0 +1,8 @@
+.catalog:
+  name: Kong API Gateway Admin Interface
+  version: 1.0-rancher0
+  uuid: kong-admin-0
+  description: |
+    Allow easy administration of the Kong API Gateway
+ui:
+  scale: 1
