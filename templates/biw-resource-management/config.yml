@@ -1,0 +1,5 @@
+name: BIW Resource Management Stack
+description: |
+    InfluxDB for metrics storage, Telegraf for metrics collection, grafana for monitoring and analytics and <something> for log aggregation
+version: 1.0-rancher0
+category: Metrics / Monitoring

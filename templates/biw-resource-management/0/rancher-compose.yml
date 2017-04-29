@@ -1,0 +1,17 @@
+.catalog:
+  name: BIW Resource Management Stack
+  version: 1.0-rancher0
+  uuid: metrics-storage-0
+  description: |
+    InfluxDB for metrics storage, Telegraf for metrics collection, grafana for monitoring and analytics and <something> for log aggregation
+influxdb:
+  scale: 1
+  health_check:
+    port: 8083
+    interval: 2000
+    initializing_timeout: 60000
+    unhealthy_threshold: 3
+    strategy: recreate
+    response_timeout: 2000
+    request_line: GET "/" "HTTP/1.0"
+    healthy_threshold: 2
