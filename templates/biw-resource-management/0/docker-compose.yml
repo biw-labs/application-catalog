@@ -43,3 +43,11 @@ telegraf-conf:
   image: objectpartners/rancher-container-conf:latest
   volumes:
   - /config/telegraf
+grafana:
+  image: grafana/grafana:latest
+  environment:
+    GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_ADMIN_PWD}
+    GF_SECURITY_ADMIN_USER: ${GRAFANA_ADMIN_USERNAME}
+    GF_SECURITY_SECRET_KEY: ${GRAFANA_SECRET_KEY}
+  ports:
+  - 3000:3000/tcp
