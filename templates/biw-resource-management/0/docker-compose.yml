@@ -6,3 +6,40 @@ influxdb:
     io.rancher.container.hostname_override: container_name
     io.rancher.scheduler.affinity:container_label_ne: io.rancher.project_service.name=influxdb/influxdb
   image: influxdb:1.0.1
+telegraf:
+  ports:
+  - 8092:8092/udp
+  environment:
+    HOST_ETC: /rootfs/etc
+    HOST_MOUNT_PREFIX: /rootfs
+    HOST_PROC: /rootfs/proc
+    HOST_SYS: /rootfs/sys
+    LOGSPOUT: ignore
+  labels:
+    io.rancher.scheduler.global: 'true'
+    io.rancher.sidekicks: telegraf-conf
+    io.rancher.container.pull_image: always
+    io.rancher.container.hostname_override: container_name
+    io.rancher.container.dns: 'true'
+  command:
+  - -config
+  - /config/telegraf/telegraf.conf
+  image: telegraf:1.0.1
+  volumes:
+  - /var/run/docker.sock:/var/run/docker.sock:ro
+  - /:/rootfs:ro
+  volumes_from:
+  - telegraf-conf
+  net: host
+telegraf-conf:
+  environment:
+    LOGSPOUT: ignore
+  labels:
+    io.rancher.scheduler.global: 'true'
+    io.rancher.container.pull_image: always
+    io.rancher.container.hostname_override: container_name
+  command:
+  - config/telegraf
+  image: objectpartners/rancher-container-conf:latest
+  volumes:
+  - /config/telegraf
