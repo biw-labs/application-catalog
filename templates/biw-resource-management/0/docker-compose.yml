@@ -51,3 +51,14 @@ grafana:
     GF_SECURITY_SECRET_KEY: ${GRAFANA_SECRET_KEY}
   ports:
   - 3000:3000/tcp
+logspout_firehose:
+  image: 302265824077.dkr.ecr.us-west-2.amazonaws.com/logspout-firehose:d2e85f2
+  command: 'syslog://logstash:5000'
+  links:
+    - logstash
+  environment:
+    AWS_ACCESS_KEY: ${LOGSPOUT_AWS_ACCESS_KEY}
+    AWS_SECRET_KEY: ${LOGSPOUT_AWS_SECRET_KEY}
+    AWS_REGION: ${AWS_REGION}
+  volumes:
+    - /var/run/docker.sock:/tmp/docker.sock

@@ -26,6 +26,14 @@
       type: "string"
       required: true
       label: "Grafana Secret Key"
+    - variable: "logspout_aws_access_key"
+      type: "string"
+      require: true
+      label: "Logspout AWS Access Key"
+    - variable: "logspout_aws_secret_key"
+      type: "string"
+      require: true
+      label: "Logspout AWS Secret Key"
 influxdb:
   scale: 1
   health_check:

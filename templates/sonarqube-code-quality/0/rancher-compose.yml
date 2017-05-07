@@ -9,17 +9,14 @@
       type: "string"
       required: true
       label: "DB Username"
-  questions:
     - variable: "sonarqube_db_jdbc_password"
       type: "string"
       required: true
       label: "DB Password"
-  questions:
     - variable: "sonarqube_db_jdbc_url"
       type: "string"
       required: true
       label: "DB JDBC URL"
-  questions:
     - variable: "sonarqube_db_jdbc_dbname"
       type: "string"
       required: true
